@@ -1,0 +1,23 @@
+[
+    {
+        "text" : "Really pleased with the bike. It is comfortable to ride on long trails on and off road.",
+        "author" : "Leo Morgan",
+        "date" : "19/03/2021",
+        "img" : "user-1.jpeg",
+        "color" : "blue"
+    },
+    {
+        "text" : "Cycling on these bikes has never been more fun. Even when it rains.",
+        "author" : "Kaylee Larson",
+        "date" : "02/01/2021",
+        "img" : "user-2.jpeg",
+        "color" : "green"
+    },
+    {
+        "text" : "Price point is bang for the buck for its parts. I really love biking with this new steed.",
+        "author" : "Ava Stone",
+        "date" : "12/02/2021",
+        "img" : "user-3.jpeg",
+        "color" : "pink"
+    }
+]

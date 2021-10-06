@@ -1,0 +1,9 @@
+<div class="features-home__flex h-layout">
+    {% for feature in collections.features %}
+        <div class="feature">
+            <i class="fas {{ feature.data.icon }}"></i>
+            <h3>{{ feature.data.title }}</h3>
+            <p>{{ feature.data.text }}</p>
+        </div>
+    {% endfor %}
+</div>

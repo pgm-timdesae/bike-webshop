@@ -1,0 +1,31 @@
+.categories-container {
+    background-color: $primary-blue;
+    padding-top: $padding-bigger;
+    padding-bottom: $padding-bigger;
+
+    .categories__content {
+        ul {
+            margin: 0;
+    
+            li {
+                a {
+                    font-size: $font-size-biggest;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-weight: 500;
+    
+                    &:hover {
+                        color: $black;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .categories-container {      
+        padding-left: 15%;
+    }
+}

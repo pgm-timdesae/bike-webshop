@@ -1,0 +1,10 @@
+{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+    listElement: "ul",
+    listItemElement: "li",
+    listClass: "main-nav__list",
+    listItemClass: "main-nav__list-item",
+    listItemHasChildrenClass: "has-children",
+    activeListItemClass: "main-nav__list-item--active",
+    activeKey: eleventyNavigation.key,
+    showExcerpt: false
+}) | safe }}

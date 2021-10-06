@@ -1,0 +1,22 @@
+<div class="testimonials-home__flex">
+    {% for test in testimonials %}
+    <div class="testimonial">
+        <div class="testimonial__content">
+            <span class="sign--{{ test.color }}">"</span>
+            <p>{{ test.text }}</p>
+        </div>
+        <div class="testimonial__review">
+            <div class="testimonial__review__img">
+                <img class="user--{{ test.color }}" src="./static/images/{{ test.img }}" alt="user">
+            </div>
+            <div class="testimonial__review__info">
+                <span class="user-name">{{ test.author }}</span>
+                <span class="user-date">{{ test.date }}</span>
+                <div>
+                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}    
+</div>

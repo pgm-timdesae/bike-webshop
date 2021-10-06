@@ -1,0 +1,89 @@
+$font-family-inter: 'Inter', sans-serif;
+$font-family-source: 'Source Sans Pro', sans-serif;
+
+$spacing: 18;
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Font sizes
+$font-size-smaller: 0.8rem;
+$font-size-small: 0.9rem;
+$font-size-normal: 1rem;
+$font-size-big: 1.25rem;
+$font-size-bigger: 1.75rem;
+$font-size-biggest: 2.5rem;
+$font-size-huge: 4rem;
+
+// Line-heigth
+$line-height-small: 1.2;
+$line-height-base: 1.5;
+$line-height-large: 2;
+
+/// Copy text color
+/// @type Color
+$white: #FFF;
+
+$background: #E9E2DF;
+
+/// Main brand colors
+/// @type Color
+$primary-blue: #88A8DE;
+$primary-green: #80B4A1;
+$primary-brown: #A38383;
+$primary-pink: #F6AB95;
+$primary-beige: $background;
+
+$black: #151515;
+$deep-black: #000;
+$black-hover: #333;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+//paddings
+$padding-small: 0.5rem;
+$padding-base: 1rem;
+$padding-big: 2rem;
+$padding-bigger: 3rem;
+$padding-large: 5rem;
+$padding-huge: 13rem;
+
+
+//margins
+$margin-small: 0.5rem;
+$margin-base: 1rem;
+$margin-big: 2rem;
+$margin-bigger: 4rem;
+$margin-large: 7rem;
+$margin-xl: 10rem;
+
+
+// Border radius
+$border-radius-small: 0.5rem;
+$border-radius-base: 1rem;
+$border-radius-large: 2rem;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;

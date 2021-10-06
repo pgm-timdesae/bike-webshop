@@ -1,0 +1,137 @@
+.footer {
+    background: $black;
+    color: $white;
+
+    h4 {
+        text-transform: uppercase;
+    }
+
+    &__container {
+        padding-top: $padding-big;
+        padding-bottom: $padding-big;
+
+        &-top {
+            .help-footer {
+                span {
+                    display: block;
+                    margin-bottom: $margin-small;
+                }
+            }
+            .logo-footer {
+                width: 40vw;
+            }
+
+            .menu-footer {
+                display: block;
+            }
+
+            .sign-me-up {
+
+                &__form {
+                    position: relative;
+
+                    input {
+                        padding: $padding-base;
+                        width: 95%;
+                        background-color: $black;
+                        color: $white;
+                        border: none;
+                        border-bottom: 2px solid $white;
+                        outline: 0;
+
+                        &:focus {
+                            border-bottom: 2px solid $primary-blue;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 1rem;
+                        right: 3rem;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            right: 2.5rem;
+                        }
+                    }
+
+                }
+
+                &__socials {
+                    margin-top: $margin-big;
+
+                    .socials__list {
+                        display: flex;
+
+                        &-item {
+                            a {
+                                color: white;
+
+                                i {
+                                    font-size: $font-size-bigger;
+                                    margin-right: $margin-base;
+                                }
+
+                                &:hover {
+                                    color: $primary-blue;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            .legals {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                a {
+                    color: $white;
+                    margin-right: $margin-base;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .footer {
+        &__container {
+            display: flex;
+            flex-direction: column;
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+
+                .logo-footer {
+                    width: 15%;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .menu-footer {
+                    width: 10%;
+                }
+
+                .help-footer {
+                    width: 20%;
+                }
+
+                .sign-me-up {
+                    width: 30%;
+                }
+            }
+
+            &-bottom {
+                margin-top: $margin-big;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}

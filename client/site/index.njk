@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+title: Discover our new bikes
+---
+
+<section class="hero-home">
+    <div class="hero-home__img">
+        <img src="./static/images/banner-home.jpg" />
+    </div>
+
+    <div class="hero-home__content h-layout">
+        <h2>{{ title }}</h2>
+        <p>
+            Take a look at our new collections. 
+            We have bikes for everyone! From the little kids 
+            to the grandparents who like to ride an electric bike. 
+        </p>
+    
+        <a href="/" class="secondary-button">
+            <span>Discover</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<section class="carrousel-home h-layout">
+    <div class="carrousel-home__content">
+        <h3>Make your daily rush as comfortable as possible</h3>
+        <p>Travel light, ride fast and make sure you do it in style. Our timeless designs are suitable for the urban rides, fitting the city commute.</p>  
+    </div>
+
+    <div class="carrousel-home__images">
+        <div>
+            <a href="bikes/?category=Kids%27">
+                <img class="img" src="./static/images/kids.jpg"/> 
+            </a>
+        </div>
+        <div>
+            <a href="bikes/?category=Electric">
+                <img src="./static/images/electric.jpg"/>
+            </a>
+        </div>
+        <div>
+            <a href="bikes/?category=Mountain">
+                <img src="./static/images/mountain.jpg"/>      
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="features-home">
+    {% include "components/features.njk" %}   
+</section>
+
+
+{% if testimonials | length %}
+    <section class="testimonials-home h-layout">
+        <h3>Let customers speak for us</h3>
+        {% include "components/testimonial.njk" %}   
+    </section>
+{% endif %}
+
+
+
+

@@ -1,0 +1,36 @@
+.footer-nav {
+    --nav-spacing: #{$spacing*1px};
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            font-family: $font-family-source;
+            font-size: $font-size-big;
+            font-weight: 500;
+
+            > a {
+                display: block;
+                color: $white;
+                opacity: 70%;
+                margin-bottom: $margin-small;
+                text-decoration: none; 
+
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+
+            &--active {
+                > a {
+                    opacity: 100%;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

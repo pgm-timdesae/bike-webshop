@@ -1,0 +1,36 @@
+.cookie {
+  &-container {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    padding-bottom: 1rem;
+    background: $background;
+    color: $black;
+    border: 1px solid $black;
+    z-index: 3;
+    
+    transition: 0.4s ease;
+
+    &.active{
+      bottom: 0;
+    }
+
+    a {
+      color: $black;
+    }
+  }
+  
+  &-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid $black;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-10%);
+    }
+  }
+}

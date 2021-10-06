@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: <i class="fas fa-shopping-cart"></i>
+  order: 4
+title: Shopping cart
+---
+
+<div class="cart-container h-layout">
+    <h1>{{ title }}</h1>
+    <div class="cart-container__flex-top">
+        <div class="product">
+            <div>
+                <h3>Boone 6 Disc</h3>
+                <img src="../static/images/bike.jpg"/>
+            </div>
+        </div>
+
+        <div class="cart-container__flex-top__mobile">  
+            <div class="quantity">
+                <span class="title-top">Quantity</span>
+                <div>
+                    <span>-</span><span>1</span><span>+</span>
+                </div>
+            </div>
+
+            <div class="price">
+                <span class="title-top">Price</span>
+                <span class="price">€ 2.699,00</span>
+            </div>
+        </div>
+
+        <div class="subtotal">
+            <span class="title-top">Subtotal</span>
+            <span class="price">€ 2.699,00</span>
+        </div>
+    </div>
+
+    <div class="cart-container__flex-bottom">
+        <div class="discount">
+            <h3>Discount code</h3>
+
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                    <input type="text" name="discount" id="discount" placeholder="discount code *" required>
+                </div>
+            </form>
+
+            <a href="/" class="primary-button">
+                <span>Apply code</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="total">
+            <h3>Total incl. tax: € 2.699, 00</h3>
+            <a href="/checkout" class="primary-button">
+                <span>Checkout</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,130 @@
+.webshop {
+    padding-bottom: $padding-big;
+
+    .category-container {
+        &__img {
+            background: linear-gradient(90deg, rgba(0,0,0,0.4990371148459384) 0%, rgba(0,0,0,0.4962359943977591) 100%);
+
+            h2 {
+                position: absolute;
+                z-index: 1;
+                top: 20rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                color: $white;
+                text-align: center;
+                display: block;
+                width: 100%;
+                text-transform: uppercase;
+            }
+    
+            img {
+                width: 100vw;
+                height: 60vh;
+                object-fit: cover;
+                opacity: 0.5;
+            }
+        }
+    
+        &__description {
+            padding: $padding-base 0;
+            color: $white;
+            text-align: center;
+            margin-top: -4px;
+        }
+    
+        .blue {
+            background-color: $primary-blue;
+        }
+    
+        .green {
+            background-color: $primary-green;
+        }
+    
+        .brown {
+            background-color: $primary-brown;
+        }
+    
+        .pink {
+            background-color: $primary-pink;
+        }
+    }
+    
+    .products-list {
+        &-item {
+            margin-bottom: $margin-big;
+    
+            .product {            
+                color: $black;
+                text-align: center;
+
+                &__img {
+                    width: 60vw;
+                    display: block;
+                    margin: 0 auto;
+                }
+    
+                &__title {
+                    margin-bottom: 0.5rem;
+                }
+    
+                &__price {
+                    display: block;
+                }
+                &__color {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .primary-button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 48rem) {
+    .webshop {
+        .category-container {
+            &__description {
+                padding: $padding-bigger 0;
+
+                p {
+                    width: 65%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .products-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-item {
+            width: 30%;
+    
+            .product {            
+
+                &__img {
+                    width: 100%;
+                    margin: 0;
+                }
+    
+                &__title {
+                }
+    
+                &__price {
+                }
+                &__color {
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* Primary btn */
+.primary-button {
+    display: inline-block;
+    font-size: $font-size-normal;
+    color: $white;
+    background-color: $black;
+    padding: $padding-base $padding-big;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+    margin-bottom: $margin-base;
+    text-transform: uppercase;
+
+    i {
+        margin-left: $margin-small;
+    }
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background-color: $black-hover;
+    color: $white;
+    text-decoration: none;
+
+    i {
+        margin-left: $margin-base;
+    }
+}
+
+.secondary-button {
+    display: inline-block;
+    font-size: $font-size-normal;
+    border: 1px solid $white;
+    color: $white;
+    padding: $padding-base $padding-big;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+    text-transform: uppercase;
+
+    i {
+        margin-left: $margin-small;
+    }
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background-color: $white;
+    color: $black;
+    text-decoration: none;
+
+    i {
+        margin-left: $margin-base;
+    }
+}

@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: About
+  order: 2
+title: We are the boys
+---
+
+
+<section class="about-container">
+    <h1 class="h-layout">{{ title }}</h1>
+
+    <div class="about-container__content h-layout">
+        <div class="content-intro">
+            <p>We are a team of like-minded people driven by passion to what we do.</p> 
+        </div>
+        <div class="content-story">
+            <h2>Our story</h2>
+            <p>
+            We are Tim and Nicolas, two students at Artevelde University of Applied Sciences.
+            For our final project of @work2 we made a functional webshop. All of the designs are created by us. This is a completely fictional webshop so you can’t actually buy these amazing bikes.
+            Want to see more amazing work? Check out our portfolio by clicking the link in the cards below. Enjoy!
+            </p>
+        </div>
+    </div>
+
+    <div class="about-container__us">
+        <div class="about-container-flex h-layout">
+            <div class="person">
+                <div class="person__img">
+                    <img src="../static/images/nicolas.jpeg" />     
+                </div>
+
+                <div class="person__socials">
+                    {% include "components/socials-nicolas.njk" %}   
+                </div>
+
+                <div class="person__info">
+                    <span>Nicolas Cnudde</span>
+                    <span>Student</span>
+                </div>
+            </div>
+
+            <div class="person">
+                <div class="person__img">
+                    <img src="../static/images/tim.jpeg"/>          
+                </div>
+
+                <div class="person__socials">
+                    {% include "components/socials-tim.njk" %}   
+                </div>
+
+                <div class="person__info">
+                    <span>De Saeger Tim</span>
+                    <span>Student</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
+
+<section class="features-about">
+    {% include "components/features.njk" %}   
+</section>

@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+ 
+ html {
+     background: $white;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: $font-family-source;
+    //position: relative;
+ }
+
+ /* 
+ Horizontal layout
+ */
+ .h-layout {
+    width: 85rem;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 48rem){
+    .h-layout {
+        width: 85rem;
+        max-width: 100%;
+        padding: 0 4rem;
+        margin: 0 auto;
+    }       
+}
+
+ .h-layout--small {
+     width: 40rem;
+     max-width: 100%;
+     margin: 0 auto;
+     padding: 0 $padding-base;
+     position: relative;
+ }
+ 
+section {
+    padding-bottom: $padding-base;
+}
+
+a {
+text-decoration: none;
+}
+ 
+img {
+     max-width: 100%;
+}
+
+ul {
+     list-style: none;
+     padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+}

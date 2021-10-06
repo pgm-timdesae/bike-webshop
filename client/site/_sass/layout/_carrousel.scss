@@ -1,0 +1,52 @@
+.carrousel-home {
+    padding-bottom: $padding-bigger;
+    position: relative;
+
+    &__content {
+    }
+
+    &__images {
+        margin-right: $margin-base;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        transform: translateZ(0);
+        scroll-snap-type: x mandatory;
+        display: flex;
+
+        div {
+            margin-right: $margin-base;
+
+            a {
+                img {
+                    width: 30vw;
+                    height: 30vw;    
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .carrousel-home {
+        padding-top: $padding-bigger;
+
+    
+        &__content {
+            width: 60%;
+        }
+        
+        &__images {
+            padding-top: $padding-big;
+                            
+            img {
+                margin-right: $margin-bigger;
+                object-fit: cover;
+                width: 25rem;
+                height: 25rem;
+            }
+        }    
+    }
+}

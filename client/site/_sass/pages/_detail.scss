@@ -1,0 +1,267 @@
+.detail-container {
+    padding-bottom: $padding-bigger;
+
+    &__title {
+        color: $primary-green;
+        font-weight: 700;
+    }
+
+    &__flex {
+        .overview {
+            border: 2px solid $black;
+
+            .title {
+                font-weight: 600;
+            }
+
+            span {
+                display: block;
+                margin-bottom: $margin-small;
+            }
+
+            h3 {
+                margin-top: $margin-base;
+                padding-bottom: $margin-base;
+                border-bottom: 2px solid $black;
+                text-align: center;
+            }
+
+            &__color {
+                padding: $padding-small $padding-base;
+
+                .black {
+                    background: black;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .grey {
+                    background: grey;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+
+                .magenta {
+                    background: magenta;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+
+                .yellow {
+                    background: yellow;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .sky {
+                    background: skyblue;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .lavender {
+                    background: lavender;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .azure {
+                    background: azure;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .indigo {
+                    background: indigo;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .salmon {
+                    background: salmon;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .ivory {
+                    background: ivory;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .red {
+                    background: red;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .gold {
+                    background: gold;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .green {
+                    background: green;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .blue {
+                    background: blue;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .cyan {
+                    background: cyan;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .lime {
+                    background: lime;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .orange {
+                    background: orange;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .olive {
+                    background: olive;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .lavender {
+                    background: lavender;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .turquoise {
+                    background: turquoise;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+                .orchid {
+                    background: orchid;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+            }
+
+            &__size {
+                padding: $padding-small $padding-base;
+                margin-bottom: $margin-base;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        padding: $padding-base;
+                        margin-right: $margin-base;
+                        border: 1px solid $black;
+                        border-radius: 0.5rem;
+
+                        a {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            &__price {
+                border-top: 1px solid $black;
+                display: flex;
+                justify-content: space-between;
+                
+                span {
+                    display: inline-block;
+                    padding: $padding-base $padding-big;
+                    text-align: center;
+                    width: 40%;
+                    margin: 0;
+                }
+
+                .add-to-cart {
+                    width: 60%;
+                    margin-left: 0 auto;
+                    background: $black;
+                    color: $white;
+                    transition: all 0.3s ease-in-out;
+
+                    span {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        background: $black-hover;
+                    }
+                }
+            }
+        }
+
+        .img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            margin-bottom: $margin-base;
+        }
+
+        .description {
+
+        }
+
+        .reviews {
+
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .detail-container {
+    
+        &__title {
+            margin-bottom: $margin-big;
+        }
+    
+        &__flex {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+    
+            .overview {
+                width: 40%;
+    
+                h2 {
+                }
+    
+    
+            }
+    
+            .img {
+                width: 40%;
+            }
+
+            .description {
+                width: 50%;
+                margin-top: $margin-base;
+            }
+    
+            .reviews {
+                width: 40%;
+                margin-top: $margin-base;
+            }
+    
+        }
+    }
+}

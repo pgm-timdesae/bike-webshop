@@ -1,0 +1,238 @@
+.profile-container {
+    padding-bottom: $padding-bigger;
+
+    &__bg {
+        background-color: $background;
+        height: 13rem;
+    }
+
+    &__heading {
+        margin-top: -13rem;
+        margin-bottom: $margin-small;
+
+        .welcome {
+            background: $black;
+            color: $white;
+            display: flex;
+            align-items: center;
+
+            &__info {
+                margin-left: $margin-base;
+
+                span {
+                    display: block;
+                    font-size: $font-size-bigger;
+                    font-weight: 600;
+                }
+
+                span:nth-of-type(2) {
+                    color: $primary-blue;
+                }
+            }
+        }
+    }
+
+    &__main {
+        &-left {
+            margin-top: $margin-base;
+
+            ul {
+                li {
+                    margin-bottom: $margin-small;
+
+                    a {
+                        font-size: $font-size-big;
+                        color: $black;
+                        font-weight: 600;
+                        scroll-behavior: smooth;
+
+                        i {
+                            margin-right: $margin-small;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-right {
+            .wishlist {
+                .card {
+                    border: 2px solid $black;
+                    padding: $padding-base;
+                    text-align: center;
+                    position: relative;
+
+                    img {
+                        width: 80%;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: $font-size-big;
+                    }
+
+                    span:first-of-type {
+                        font-weight: 600;
+                    }
+
+                    i {
+                        font-size: $font-size-bigger;
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                    }
+                }
+            }
+
+            .user-settings {
+                display: flex;
+                flex-direction: column;
+                border: 2px solid $black;
+                padding: $padding-base;
+
+                &-left {
+                    span {
+                        display: block;
+                        margin-bottom: $margin-small;
+                    }
+
+                    a {
+                        span {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                &-right {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+
+            .payment-history {
+                border: 2px solid $black;
+                padding: $padding-base;
+
+                &-left {
+                    span {
+                        display: block;
+                    }
+                }
+
+                &-right {
+                    .card {
+                        padding: $padding-base;
+                        text-align: center;
+                        position: relative;
+    
+                        img {
+                            width: 80%;
+                        }
+    
+                        span {
+                            display: block;
+                            font-size: $font-size-big;
+                        }
+    
+                        span:first-of-type {
+                            font-weight: 600;
+                        }
+    
+                        i {
+                            font-size: $font-size-bigger;
+                            position: absolute;
+                            top: 1rem;
+                            right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .fa-heart {
+        color: $primary-green;
+    }
+
+    .fa-user-cog {
+        color: $primary-blue;
+    }
+
+    .fa-history {
+        color: $primary-brown;
+    }
+
+    .fa-sign-out-alt {
+        color: $primary-pink;
+    }
+}
+
+@media (min-width: 60rem) {
+    .profile-container {
+        &__bg {
+
+        }
+
+        &__heading {
+            .welcome {
+                margin-left: auto;
+                width: 60%;
+
+                img {
+                    width: 10rem;;
+                }
+            }
+        }
+
+        &__main {
+            display: flex;
+            justify-content: space-between;
+
+            &-left {
+                width: 20%;
+            }
+
+            &-right {
+                width: 70%;
+
+                .wishlist {
+                    .card {
+                        img {
+                            width: 20rem;;
+                        }
+                    }
+                }
+
+                .user-settings {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    &-left {
+                        width: 40%;
+                    }
+
+                    &-right {
+                        width: 40%;
+                    }
+                }
+
+                .payment-history {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    &-left {
+                        width: 40%;
+                    }
+
+                    &-right {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}

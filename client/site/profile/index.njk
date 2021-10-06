@@ -1,0 +1,101 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: <i class="fas fa-user"></i>
+  order: 5
+title: My profile
+---
+<div class="profile-container">
+    <div class="profile-container__bg"></div>
+
+    <div class="profile-container__heading h-layout">
+        <h1>{{ title }}</h1>
+        <div class="welcome">
+            <img src="../static/images/user-2.jpeg"/>
+            <div class="welcome__info">
+                <span class="welcome__info__welcome">Welcome back,</span>
+                <span class="welcome__info__name">Tim</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-container__main h-layout">
+        <div class="profile-container__main-left">
+            <ul>
+                <li>
+                    <a href="#wishlist">
+                        <i class="fas fa-heart"></i>My wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings">
+                        <i class="fas fa-user-cog"></i>User settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#history">
+                        <i class="fas fa-history"></i>Payment history
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="profile-container__main-right">
+            <h3 id="wishlist"><i class="fas fa-heart"></i> My wishlist</h3>
+            <section class="wishlist">
+                <div class="card">
+                    <img src="../static/images/bike.jpg"/>
+                    <span class="card__title">Boone 5 Disc</span>
+                    <span class="card__price">€ 3.699</span>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </section>
+
+            <h3 id="settings"><i class="fas fa-user-cog"></i> User-settings</h3>
+            <section class="user-settings">
+                <div class="user-settings-left">
+                    <span>Tim De Saeger</span>
+                    <span>Kerkhofstraat 71</span>
+                    <span>9406 Outer</span>
+                    <span>België</span>
+                    <span>timdesaeger@hotmail.be</span>
+                    <a href="#" class="primary-button">
+                        <span>edit info  <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+
+                <div class="user-settings-right">
+                    <span>No preferences</span>
+                    <a href="#" class="primary-button">
+                        <span>edit preferences<i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </section>
+
+            <h3 id="history"><i class="fas fa-history"></i> Payment history</h3>
+            <section class="payment-history">
+                <div class="payment-history-left">
+                    <span>This was your last order</span>
+                    <a href="#" class="primary-button">
+                        <span>place new order<i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+
+                <div class="payment-history-right">
+                    <div class="card">
+                        <img src="../static/images/bike.jpg"/>
+                        <span class="card__title">Boone 5 Disc</span>
+                        <span class="card__price">€ 3.699</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</div>

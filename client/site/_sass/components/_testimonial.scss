@@ -1,0 +1,74 @@
+.testimonial {
+    margin-bottom: $margin-base;
+
+    &__content {
+        .sign--blue {
+            display: block;
+            font-family: $font-family-inter;
+            font-size: 6rem;
+            font-weight: 900;
+            color: $primary-blue;
+        }
+        .sign--green {
+            display: block;
+            font-family: $font-family-inter;
+            font-size: 6rem;
+            font-weight: 900;
+            color: $primary-green;
+        }
+        .sign--pink {
+            display: block;
+            font-family: $font-family-inter;
+            font-size: 6rem;
+            font-weight: 900;
+            color: $primary-pink;
+        }
+
+        p {
+            margin-top: -3rem ;
+        }
+    }
+
+    &__review {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            .user--blue {
+                width: 4.5rem;
+                height: 4rem;
+                object-fit: cover;
+                padding-right: 0.5rem;
+                margin-right: 1rem;
+                border-right: 2px solid $primary-blue;
+            }
+            .user--green {
+                width: 4.5rem;
+                height: 4rem;
+                object-fit: cover;
+                padding-right: 0.5rem;
+                margin-right: 1rem;
+                border-right: 2px solid $primary-green;
+            }
+            .user--pink {
+                width: 4.5rem;
+                height: 4rem;
+                object-fit: cover;
+                padding-right: 0.5rem;
+                margin-right: 1rem;
+                border-right: 2px solid $primary-pink;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 4rem;
+
+            .user-name {
+                font-weight: 600;
+            }
+        }
+    }  
+}

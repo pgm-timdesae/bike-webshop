@@ -1,0 +1,100 @@
+---
+layout: layouts/base.njk
+title: Checkout
+---
+
+<div class="checkout-container">
+    <h1 class="h-layout">{{title}}</h1>
+
+    <div class="checkout-container-flex h-layout">
+        <div class="checkout-container-flex__right">
+            <div class="overview">
+                <h4>Overview</h4>
+                <div class="overview__flex">
+                    <span>Articles</span>
+                    <span>€ 499</span>
+                </div>
+                <div class="overview__flex">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+                <div class="overview__flex">
+                    <span>Total</span>
+                    <span>€ 499</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-container-flex__left">
+                <div class="shipping">
+                    <h3>Shipping adress</h3>
+                    <form action="" method="get" class="form-example">
+                        <div class="form-example">
+                            <input type="text" name="name" id="name" placeholder="First name *"  required>
+                        </div>
+                        <div class="form-example">
+                            <input type="text" name="name" id="name" placeholder="Second name *"  required>
+                        </div>
+                        <div class="form-example">
+                            <input type="email" name="email" id="email" placeholder="Street name & number *" required>
+                        </div>
+                        <div class="form-example">
+                            <input type="number" name="telephone" id="telephone" placeholder="City *" required>
+                        </div>
+                        <div class="form-example">
+                            <input type="number" name="mobile" id="mobile" placeholder="Postal code *" required>
+                        </div>
+                        <select name="countries" id="country-select">
+                            <option value="Country">Country</option>
+                            <option value="belgium">Belgium</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="France">France</option>
+                        </select> 
+                    </form>
+                </div>
+                
+                <div class="delivery">
+                    <h3>Delivery time</h3>
+
+                    <ul>
+                        <li>
+                            <h4>Tomorrow</h4>
+                            <p>Between 9:00 and 17:00</p>
+                        </li>
+                        <li>
+                            <h4>Tuesday</h4>
+                            <p>Between 9:00 and 17:00</p>
+                        </li>
+                        <li>
+                            <h4>Wednesday</h4>
+                            <p>Between 9:00 and 17:00</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="method">
+                    <h3>Payment method</h3>
+                    <ul>
+                        <li>
+                            <img src="../static/images/sepa.png"/>
+                            <h4>Bank Transfer (SEPA)</h4>
+                        </li>
+                        <li>
+                            <img src="../static/images/bancontact.png"/>
+                            <h4>Bancontact</h4>
+                        </li>
+                        <li>
+                            <img src="../static/images/visa.png"/>
+                            <h4>Visa / Mastercard</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="/checkout" class="primary-button">
+                    <span>Continue</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+        </div>
+    </div>
+
+</div>

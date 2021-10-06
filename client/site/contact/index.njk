@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Contact
+  order: 3
+title: Get in touch
+---
+<section class="contact-container">
+    <h1 class="h-layout">{{ title }}</h1>
+
+    <div class="contact-container__info h-layout">
+        <div class="info-black">
+            <h4>Address</h4>
+            <span>Industrieweg 232, 9820 Mariakerke</span>
+
+            <h4>Contact</h4>
+            <span>+32 9 329 12 34</span>
+            <span>hello@theboys.be</span>
+        </div>
+
+        <div class="info-img">
+            <img src="../static/images/office.jpg" />
+        </div>
+    </div>
+
+    <div class="contact-container__form">
+        <div class="form-content h-layout">
+            <h3>Fill up the form and our team will get back to you within 24 hours.</h3>
+
+            <div class="form-content-web">
+                <div class="flex">
+                    <p>Hey, my name is </p>
+                    <form action="" method="get" class="form-example">
+                        <div class="form-example">
+                            <input type="email" name="email" id="email" placeholder="Tim De Saeger" required>
+                        </div>
+                    </form>          
+                </div>
+
+                <div class="flex">
+                    <p>and I’m looking for </p>
+                    <select name="pets" id="pet-select">
+                        <option value="">-- select your choice --</option>
+                        <option value="bikes">bikes</option>
+                        <option value="info">info</option>
+                        <option value="prices">prices</option>
+                        <option value="else">Something else</option>
+                    </select>           
+                </div>
+            </div>
+
+            <div class="flex">
+                <p>You can contact me at </p>
+                
+                <form action="" method="get" class="form-example">
+                    <div class="form-example">
+                        <input type="email" name="email" id="email" placeholder="hello@theboys.be" required>
+                    </div>
+                </form>           
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" id="scales" name="scales" required>
+                <p>I here by accept all terms and conditions</p>
+            </div>
+
+            <a href="/" class="primary-button">
+                <span>Send</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+</section>

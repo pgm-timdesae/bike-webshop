@@ -1,0 +1,47 @@
+.hero-home {
+    z-index: 1;
+    background-color: $deep-black;
+    color: $white;
+    padding-bottom: $margin-bigger;
+
+    &__img {
+        
+        img {
+            width: 100vw;
+            height: 50vh;
+            object-fit: cover;
+        }
+      }
+
+}
+
+@media (min-width: 48rem) {
+    .hero-home {
+        z-index: 1;
+        position: relative;
+        background-color: $white;
+    
+        &__img {
+            img {
+                height: 80vh;
+                width: 100vw;
+            }
+        }
+
+        &__content {
+            position: absolute;
+            top: 10rem;
+            right: 0;
+            width: 50%;
+        }
+    }    
+}
+
+ @media (min-width: 60rem) {
+    .hero-home {
+        &__content {
+            right: 5rem;
+            width: 40%;
+        }
+    }
+}
